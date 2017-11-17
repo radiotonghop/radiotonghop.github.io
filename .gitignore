@@ -4,3 +4,8 @@
 _site
 Gemfile.lock
 .idea/workspace.xml
+.idea/radio.iml
+.idea/
+.idea/inspectionProfiles/
+_includes/
+assets/
