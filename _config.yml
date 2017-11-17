@@ -26,12 +26,12 @@ github_username:  radiotonghop
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-awesome
+theme: minima
 plugins:
   - jekyll-feed
-
+  - jekyll-coffeescript
 sass:
-  style: compressed
+  # style: compressed
   sass_dir: _sass
 
 # Exclude from processing.

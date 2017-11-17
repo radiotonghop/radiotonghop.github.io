@@ -4,5 +4,9 @@ source "https://rubygems.org"
 gem "jekyll"
 gem "github-pages"
 
-gem "jekyll-admin", group: :jekyll_plugins
-gem "jekyll-seo-tag", group: :jekyll_plugins
+group :jekyll_plugins do
+	gem "jekyll-coffeescript"
+	gem "jekyll-admin"
+	gem "jekyll-seo-tag"
+end
+
