@@ -8,5 +8,7 @@ group :jekyll_plugins do
 	gem "jekyll-coffeescript"
 	gem "jekyll-admin"
 	gem "jekyll-seo-tag"
+	gem "jekyll-paginate-v2"
+	gem "jekyll-archives"
 end
 

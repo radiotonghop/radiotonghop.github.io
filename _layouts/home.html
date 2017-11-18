@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+
+    <!-- content -->
+    <div class="col-lg-12 line">
+	    <h1>
+	    	<a href="{{ post.url }}">{{ post.title }}</a>
+	    </h1>
+	    
+	    <h2>
+	    	{{ post.date | date_to_string }} | 
+
+	    	{% unless post.categories.empty? %}
+                {% for category in post.categories %}
+                    <a href="/category/{{ category }}">{{ category }}</a>
+                {% endfor %}
+            {% endunless %}
+	    </h2>
+
+	    {{ post.excerpt }}
+
+	    <p class="read-more">
+	    	<a href="{{ post.url }}">Read More &nbsp;→</a>
+	    </p>
+    </div>
+    <!-- content -->
+
+{% endfor %}
+
+
+<!-- Pagination links -->
+<div class="pagination col-lg-12 lefted">
+	<h3>
+		{% if paginator.total_pages > 1 %}
+			<div class="row">
+				<div class="col-xs-6 text-left">
+				  	{% if paginator.next_page %}		  	
+				    	<a href="{{ paginator.next_page_path | prepend: site.baseurl }}">← &nbsp; Older posts</a>		   
+				  	{% endif %}
+			  	</div>
+					
+				<div class="col-xs-6 text-right">
+				  	{% if paginator.previous_page %}
+				    	<a href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer posts &nbsp; →</a>
+				  	{% endif %}
+			  	</div>
+			</div>
+		{% endif %}
+	</h3>
+</div>
