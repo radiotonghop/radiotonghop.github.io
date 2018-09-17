@@ -1,1 +1,29 @@
-theme: jekyll-theme-leap-day
+# Site settings
+title: Radio Tổng Hợp
+email: radiotonghop@gmail.com
+description: Um lindo tema feito para jekyll e com o <3
+baseurl: ''
+url: "http://nandomoreira.me"
+
+author:
+  name     : 'Radio Tổng Hợp'
+  email    : radiotonghop@gmail.com
+  url      : http://radiotonghop.com
+  facebook : http://facebook.com/radiotonghop
+  twitter  : http://twitter.com/radiotonghop
+
+github: https://github.com/radiotonghop
+disqus_shortname: "mc_minhha"
+google_analytics: ''
+
+paginate: 20
+comments: true
+paginate_path: "/page/:num"
+
+sass:
+  style: :compressed
+  sass_dir: _sass
+
+# Build settings
+markdown  : kramdown
+permalink : /:title/
